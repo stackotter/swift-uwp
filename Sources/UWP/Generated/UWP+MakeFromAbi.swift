@@ -119,31 +119,6 @@ fileprivate func makeIFrameworkViewSourceFrom(abi: WindowsFoundation.IInspectabl
     return __IMPL_Windows_ApplicationModel_Core.IFrameworkViewSourceBridge.from(abi: RawPointer(swiftAbi))!
 }
 
-fileprivate func makeIXmlCharacterDataFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Data_Xml_Dom.IXmlCharacterData = try! abi.QueryInterface()
-    return __IMPL_Windows_Data_Xml_Dom.IXmlCharacterDataBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIXmlNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Data_Xml_Dom.IXmlNode = try! abi.QueryInterface()
-    return __IMPL_Windows_Data_Xml_Dom.IXmlNodeBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIXmlNodeSelectorFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Data_Xml_Dom.IXmlNodeSelector = try! abi.QueryInterface()
-    return __IMPL_Windows_Data_Xml_Dom.IXmlNodeSelectorBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIXmlNodeSerializerFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Data_Xml_Dom.IXmlNodeSerializer = try! abi.QueryInterface()
-    return __IMPL_Windows_Data_Xml_Dom.IXmlNodeSerializerBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIXmlTextFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Data_Xml_Dom.IXmlText = try! abi.QueryInterface()
-    return __IMPL_Windows_Data_Xml_Dom.IXmlTextBridge.from(abi: RawPointer(swiftAbi))!
-}
-
 fileprivate func makeIDevicePairingSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Devices_Enumeration.IDevicePairingSettings = try! abi.QueryInterface()
     return __IMPL_Windows_Devices_Enumeration.IDevicePairingSettingsBridge.from(abi: RawPointer(swiftAbi))!
@@ -152,11 +127,6 @@ fileprivate func makeIDevicePairingSettingsFrom(abi: WindowsFoundation.IInspecta
 fileprivate func makeIGeometrySource2DFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Graphics.IGeometrySource2D = try! abi.QueryInterface()
     return __IMPL_Windows_Graphics.IGeometrySource2DBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIDirect3DDeviceFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Graphics_DirectX_Direct3D11.IDirect3DDevice = try! abi.QueryInterface()
-    return __IMPL_Windows_Graphics_DirectX_Direct3D11.IDirect3DDeviceBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIDirect3DSurfaceFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -189,31 +159,6 @@ fileprivate func makeIBitmapPropertiesViewFrom(abi: WindowsFoundation.IInspectab
     return __IMPL_Windows_Graphics_Imaging.IBitmapPropertiesViewBridge.from(abi: RawPointer(swiftAbi))!
 }
 
-fileprivate func makeIMediaFrameFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media.IMediaFrame = try! abi.QueryInterface()
-    return __IMPL_Windows_Media.IMediaFrameBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIAudioInputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media_Audio.IAudioInputNode = try! abi.QueryInterface()
-    return __IMPL_Windows_Media_Audio.IAudioInputNodeBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIAudioInputNode2From(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media_Audio.IAudioInputNode2 = try! abi.QueryInterface()
-    return __IMPL_Windows_Media_Audio.IAudioInputNode2Bridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIAudioNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media_Audio.IAudioNode = try! abi.QueryInterface()
-    return __IMPL_Windows_Media_Audio.IAudioNodeBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIAudioNodeWithListenerFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media_Audio.IAudioNodeWithListener = try! abi.QueryInterface()
-    return __IMPL_Windows_Media_Audio.IAudioNodeWithListenerBridge.from(abi: RawPointer(swiftAbi))!
-}
-
 fileprivate func makeIMediaCueFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Media_Core.IMediaCue = try! abi.QueryInterface()
     return __IMPL_Windows_Media_Core.IMediaCueBridge.from(abi: RawPointer(swiftAbi))!
@@ -229,11 +174,6 @@ fileprivate func makeIMediaStreamDescriptorFrom(abi: WindowsFoundation.IInspecta
     return __IMPL_Windows_Media_Core.IMediaStreamDescriptorBridge.from(abi: RawPointer(swiftAbi))!
 }
 
-fileprivate func makeIMediaStreamDescriptor2From(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media_Core.IMediaStreamDescriptor2 = try! abi.QueryInterface()
-    return __IMPL_Windows_Media_Core.IMediaStreamDescriptor2Bridge.from(abi: RawPointer(swiftAbi))!
-}
-
 fileprivate func makeIMediaTrackFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Media_Core.IMediaTrack = try! abi.QueryInterface()
     return __IMPL_Windows_Media_Core.IMediaTrackBridge.from(abi: RawPointer(swiftAbi))!
@@ -247,11 +187,6 @@ fileprivate func makeISingleSelectMediaTrackListFrom(abi: WindowsFoundation.IIns
 fileprivate func makeIMediaDeviceControllerFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Media_Devices.IMediaDeviceController = try! abi.QueryInterface()
     return __IMPL_Windows_Media_Devices.IMediaDeviceControllerBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIAudioEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_Media_Effects.IAudioEffectDefinition = try! abi.QueryInterface()
-    return __IMPL_Windows_Media_Effects.IAudioEffectDefinitionBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIMediaEncodingPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -447,11 +382,6 @@ fileprivate func makeICoreWindowEventArgsFrom(abi: WindowsFoundation.IInspectabl
 fileprivate func makeIPointerPointTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_UI_Input.IPointerPointTransform = try! abi.QueryInterface()
     return __IMPL_Windows_UI_Input.IPointerPointTransformBridge.from(abi: RawPointer(swiftAbi))!
-}
-
-fileprivate func makeIAdaptiveNotificationContentFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    let swiftAbi: __ABI_Windows_UI_Notifications.IAdaptiveNotificationContent = try! abi.QueryInterface()
-    return __IMPL_Windows_UI_Notifications.IAdaptiveNotificationContentBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIHttpContentFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -672,62 +602,6 @@ fileprivate func makeTargetApplicationChosenEventArgsFrom(abi: WindowsFoundation
     return TargetApplicationChosenEventArgs(fromAbi: abi)
 }
 
-fileprivate func makeXmlAttributeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlAttribute(fromAbi: abi)
-}
-
-fileprivate func makeXmlCDataSectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlCDataSection(fromAbi: abi)
-}
-
-fileprivate func makeXmlCommentFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlComment(fromAbi: abi)
-}
-
-fileprivate func makeXmlDocumentFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlDocument(fromAbi: abi)
-}
-
-fileprivate func makeXmlDocumentFragmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlDocumentFragment(fromAbi: abi)
-}
-
-fileprivate func makeXmlDocumentTypeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlDocumentType(fromAbi: abi)
-}
-
-fileprivate func makeXmlDomImplementationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlDomImplementation(fromAbi: abi)
-}
-
-fileprivate func makeXmlElementFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlElement(fromAbi: abi)
-}
-
-fileprivate func makeXmlEntityReferenceFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlEntityReference(fromAbi: abi)
-}
-
-fileprivate func makeXmlLoadSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlLoadSettings(fromAbi: abi)
-}
-
-fileprivate func makeXmlNamedNodeMapFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlNamedNodeMap(fromAbi: abi)
-}
-
-fileprivate func makeXmlNodeListFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlNodeList(fromAbi: abi)
-}
-
-fileprivate func makeXmlProcessingInstructionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlProcessingInstruction(fromAbi: abi)
-}
-
-fileprivate func makeXmlTextFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return XmlText(fromAbi: abi)
-}
-
 fileprivate func makeDeviceInformationFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DeviceInformation(fromAbi: abi)
 }
@@ -756,10 +630,6 @@ fileprivate func makeDevicePairingResultFrom(abi: WindowsFoundation.IInspectable
     return DevicePairingResult(fromAbi: abi)
 }
 
-fileprivate func makeDevicePickerAppearanceFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return DevicePickerAppearance(fromAbi: abi)
-}
-
 fileprivate func makeDeviceThumbnailFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DeviceThumbnail(fromAbi: abi)
 }
@@ -776,32 +646,8 @@ fileprivate func makeEnclosureLocationFrom(abi: WindowsFoundation.IInspectable) 
     return EnclosureLocation(fromAbi: abi)
 }
 
-fileprivate func makeKeyboardCapabilitiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return KeyboardCapabilities(fromAbi: abi)
-}
-
-fileprivate func makeMouseCapabilitiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return MouseCapabilities(fromAbi: abi)
-}
-
-fileprivate func makeMouseDeviceFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return MouseDevice(fromAbi: abi)
-}
-
-fileprivate func makeMouseEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return MouseEventArgs(fromAbi: abi)
-}
-
-fileprivate func makePenDeviceFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return PenDevice(fromAbi: abi)
-}
-
 fileprivate func makePointerDeviceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PointerDevice(fromAbi: abi)
-}
-
-fileprivate func makeTouchCapabilitiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TouchCapabilities(fromAbi: abi)
 }
 
 fileprivate func makeLanguageFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -880,14 +726,6 @@ fileprivate func makePackageVolumeFrom(abi: WindowsFoundation.IInspectable) -> A
     return PackageVolume(fromAbi: abi)
 }
 
-fileprivate func makeAudioBufferFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioBuffer(fromAbi: abi)
-}
-
-fileprivate func makeAudioFrameFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioFrame(fromAbi: abi)
-}
-
 fileprivate func makeAutoRepeatModeChangeRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AutoRepeatModeChangeRequestedEventArgs(fromAbi: abi)
 }
@@ -944,148 +782,8 @@ fileprivate func makeVideoDisplayPropertiesFrom(abi: WindowsFoundation.IInspecta
     return VideoDisplayProperties(fromAbi: abi)
 }
 
-fileprivate func makeAudioDeviceInputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioDeviceInputNode(fromAbi: abi)
-}
-
-fileprivate func makeAudioDeviceOutputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioDeviceOutputNode(fromAbi: abi)
-}
-
-fileprivate func makeAudioFileInputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioFileInputNode(fromAbi: abi)
-}
-
-fileprivate func makeAudioFileOutputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioFileOutputNode(fromAbi: abi)
-}
-
-fileprivate func makeAudioFrameCompletedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioFrameCompletedEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeAudioFrameInputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioFrameInputNode(fromAbi: abi)
-}
-
-fileprivate func makeAudioFrameOutputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioFrameOutputNode(fromAbi: abi)
-}
-
-fileprivate func makeAudioGraphFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioGraph(fromAbi: abi)
-}
-
-fileprivate func makeAudioGraphBatchUpdaterFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioGraphBatchUpdater(fromAbi: abi)
-}
-
-fileprivate func makeAudioGraphConnectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioGraphConnection(fromAbi: abi)
-}
-
-fileprivate func makeAudioGraphSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioGraphSettings(fromAbi: abi)
-}
-
-fileprivate func makeAudioGraphUnrecoverableErrorOccurredEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioGraphUnrecoverableErrorOccurredEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeAudioNodeEmitterFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioNodeEmitter(fromAbi: abi)
-}
-
-fileprivate func makeAudioNodeEmitterConePropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioNodeEmitterConeProperties(fromAbi: abi)
-}
-
-fileprivate func makeAudioNodeEmitterDecayModelFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioNodeEmitterDecayModel(fromAbi: abi)
-}
-
-fileprivate func makeAudioNodeEmitterNaturalDecayModelPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioNodeEmitterNaturalDecayModelProperties(fromAbi: abi)
-}
-
-fileprivate func makeAudioNodeEmitterShapeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioNodeEmitterShape(fromAbi: abi)
-}
-
-fileprivate func makeAudioNodeListenerFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioNodeListener(fromAbi: abi)
-}
-
 fileprivate func makeAudioStateMonitorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AudioStateMonitor(fromAbi: abi)
-}
-
-fileprivate func makeAudioSubmixNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioSubmixNode(fromAbi: abi)
-}
-
-fileprivate func makeCreateAudioDeviceInputNodeResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CreateAudioDeviceInputNodeResult(fromAbi: abi)
-}
-
-fileprivate func makeCreateAudioDeviceOutputNodeResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CreateAudioDeviceOutputNodeResult(fromAbi: abi)
-}
-
-fileprivate func makeCreateAudioFileInputNodeResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CreateAudioFileInputNodeResult(fromAbi: abi)
-}
-
-fileprivate func makeCreateAudioFileOutputNodeResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CreateAudioFileOutputNodeResult(fromAbi: abi)
-}
-
-fileprivate func makeCreateAudioGraphResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CreateAudioGraphResult(fromAbi: abi)
-}
-
-fileprivate func makeCreateMediaSourceAudioInputNodeResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CreateMediaSourceAudioInputNodeResult(fromAbi: abi)
-}
-
-fileprivate func makeEchoEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return EchoEffectDefinition(fromAbi: abi)
-}
-
-fileprivate func makeEqualizerBandFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return EqualizerBand(fromAbi: abi)
-}
-
-fileprivate func makeEqualizerEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return EqualizerEffectDefinition(fromAbi: abi)
-}
-
-fileprivate func makeFrameInputNodeQuantumStartedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return FrameInputNodeQuantumStartedEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeLimiterEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return LimiterEffectDefinition(fromAbi: abi)
-}
-
-fileprivate func makeMediaSourceAudioInputNodeFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return MediaSourceAudioInputNode(fromAbi: abi)
-}
-
-fileprivate func makeReverbEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ReverbEffectDefinition(fromAbi: abi)
-}
-
-fileprivate func makeSetDefaultSpatialAudioFormatResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SetDefaultSpatialAudioFormatResult(fromAbi: abi)
-}
-
-fileprivate func makeSpatialAudioDeviceConfigurationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SpatialAudioDeviceConfiguration(fromAbi: abi)
-}
-
-fileprivate func makeSpatialAudioFormatConfigurationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SpatialAudioFormatConfiguration(fromAbi: abi)
 }
 
 fileprivate func makeMediaCaptureVideoProfileMediaDescriptionFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1124,36 +822,8 @@ fileprivate func makeVideoMediaFrameFormatFrom(abi: WindowsFoundation.IInspectab
     return VideoMediaFrameFormat(fromAbi: abi)
 }
 
-fileprivate func makeCastingConnectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CastingConnection(fromAbi: abi)
-}
-
-fileprivate func makeCastingConnectionErrorOccurredEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CastingConnectionErrorOccurredEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeCastingDeviceFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CastingDevice(fromAbi: abi)
-}
-
-fileprivate func makeCastingDevicePickerFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CastingDevicePicker(fromAbi: abi)
-}
-
-fileprivate func makeCastingDevicePickerFilterFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CastingDevicePickerFilter(fromAbi: abi)
-}
-
-fileprivate func makeCastingDeviceSelectedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return CastingDeviceSelectedEventArgs(fromAbi: abi)
-}
-
 fileprivate func makeCastingSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return CastingSource(fromAbi: abi)
-}
-
-fileprivate func makeAudioStreamDescriptorFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AudioStreamDescriptor(fromAbi: abi)
 }
 
 fileprivate func makeAudioTrackFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1272,10 +942,6 @@ fileprivate func makeMseStreamSourceFrom(abi: WindowsFoundation.IInspectable) ->
     return MseStreamSource(fromAbi: abi)
 }
 
-fileprivate func makeTimedMetadataStreamDescriptorFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TimedMetadataStreamDescriptor(fromAbi: abi)
-}
-
 fileprivate func makeTimedMetadataTrackFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TimedMetadataTrack(fromAbi: abi)
 }
@@ -1294,10 +960,6 @@ fileprivate func makeTimedTextSourceFrom(abi: WindowsFoundation.IInspectable) ->
 
 fileprivate func makeTimedTextSourceResolveResultEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TimedTextSourceResolveResultEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeVideoStreamDescriptorFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return VideoStreamDescriptor(fromAbi: abi)
 }
 
 fileprivate func makeVideoTrackFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1484,24 +1146,12 @@ fileprivate func makeAudioEncodingPropertiesFrom(abi: WindowsFoundation.IInspect
     return AudioEncodingProperties(fromAbi: abi)
 }
 
-fileprivate func makeContainerEncodingPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ContainerEncodingProperties(fromAbi: abi)
-}
-
-fileprivate func makeMediaEncodingProfileFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return MediaEncodingProfile(fromAbi: abi)
-}
-
 fileprivate func makeMediaPropertySetFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaPropertySet(fromAbi: abi)
 }
 
 fileprivate func makeMediaRatioFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaRatio(fromAbi: abi)
-}
-
-fileprivate func makeTimedMetadataEncodingPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TimedMetadataEncodingProperties(fromAbi: abi)
 }
 
 fileprivate func makeVideoEncodingPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2064,26 +1714,6 @@ fileprivate func makeUserWatcherFrom(abi: WindowsFoundation.IInspectable) -> Any
     return UserWatcher(fromAbi: abi)
 }
 
-fileprivate func makeSystemCpuUsageFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SystemCpuUsage(fromAbi: abi)
-}
-
-fileprivate func makeSystemCpuUsageReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SystemCpuUsageReport(fromAbi: abi)
-}
-
-fileprivate func makeSystemDiagnosticInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SystemDiagnosticInfo(fromAbi: abi)
-}
-
-fileprivate func makeSystemMemoryUsageFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SystemMemoryUsage(fromAbi: abi)
-}
-
-fileprivate func makeSystemMemoryUsageReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return SystemMemoryUsageReport(fromAbi: abi)
-}
-
 fileprivate func makeUIContextFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return UIContext(fromAbi: abi)
 }
@@ -2540,124 +2170,8 @@ fileprivate func makePointerPointPropertiesFrom(abi: WindowsFoundation.IInspecta
     return PointerPointProperties(fromAbi: abi)
 }
 
-fileprivate func makeAdaptiveNotificationTextFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return AdaptiveNotificationText(fromAbi: abi)
-}
-
-fileprivate func makeBadgeNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return BadgeNotification(fromAbi: abi)
-}
-
-fileprivate func makeBadgeUpdateManagerForUserFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return BadgeUpdateManagerForUser(fromAbi: abi)
-}
-
-fileprivate func makeBadgeUpdaterFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return BadgeUpdater(fromAbi: abi)
-}
-
-fileprivate func makeNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return Notification(fromAbi: abi)
-}
-
-fileprivate func makeNotificationBindingFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return NotificationBinding(fromAbi: abi)
-}
-
-fileprivate func makeNotificationDataFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return NotificationData(fromAbi: abi)
-}
-
-fileprivate func makeNotificationVisualFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return NotificationVisual(fromAbi: abi)
-}
-
-fileprivate func makeScheduledTileNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ScheduledTileNotification(fromAbi: abi)
-}
-
-fileprivate func makeScheduledToastNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ScheduledToastNotification(fromAbi: abi)
-}
-
-fileprivate func makeScheduledToastNotificationShowingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ScheduledToastNotificationShowingEventArgs(fromAbi: abi)
-}
-
 fileprivate func makeShownTileNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ShownTileNotification(fromAbi: abi)
-}
-
-fileprivate func makeTileFlyoutNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TileFlyoutNotification(fromAbi: abi)
-}
-
-fileprivate func makeTileFlyoutUpdaterFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TileFlyoutUpdater(fromAbi: abi)
-}
-
-fileprivate func makeTileNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TileNotification(fromAbi: abi)
-}
-
-fileprivate func makeTileUpdateManagerForUserFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TileUpdateManagerForUser(fromAbi: abi)
-}
-
-fileprivate func makeTileUpdaterFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return TileUpdater(fromAbi: abi)
-}
-
-fileprivate func makeToastActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastActivatedEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeToastCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastCollection(fromAbi: abi)
-}
-
-fileprivate func makeToastCollectionManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastCollectionManager(fromAbi: abi)
-}
-
-fileprivate func makeToastDismissedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastDismissedEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeToastFailedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastFailedEventArgs(fromAbi: abi)
-}
-
-fileprivate func makeToastNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastNotification(fromAbi: abi)
-}
-
-fileprivate func makeToastNotificationActionTriggerDetailFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastNotificationActionTriggerDetail(fromAbi: abi)
-}
-
-fileprivate func makeToastNotificationHistoryFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastNotificationHistory(fromAbi: abi)
-}
-
-fileprivate func makeToastNotificationHistoryChangedTriggerDetailFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastNotificationHistoryChangedTriggerDetail(fromAbi: abi)
-}
-
-fileprivate func makeToastNotificationManagerForUserFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastNotificationManagerForUser(fromAbi: abi)
-}
-
-fileprivate func makeToastNotifierFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return ToastNotifier(fromAbi: abi)
-}
-
-fileprivate func makeUserNotificationFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return UserNotification(fromAbi: abi)
-}
-
-fileprivate func makeUserNotificationChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
-    return UserNotificationChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeFontWeightsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2871,33 +2385,20 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ICoreApplicationUnhandledError": return makeICoreApplicationUnhandledErrorFrom(abi: abi)
             case "IFrameworkView": return makeIFrameworkViewFrom(abi: abi)
             case "IFrameworkViewSource": return makeIFrameworkViewSourceFrom(abi: abi)
-            case "IXmlCharacterData": return makeIXmlCharacterDataFrom(abi: abi)
-            case "IXmlNode": return makeIXmlNodeFrom(abi: abi)
-            case "IXmlNodeSelector": return makeIXmlNodeSelectorFrom(abi: abi)
-            case "IXmlNodeSerializer": return makeIXmlNodeSerializerFrom(abi: abi)
-            case "IXmlText": return makeIXmlTextFrom(abi: abi)
             case "IDevicePairingSettings": return makeIDevicePairingSettingsFrom(abi: abi)
             case "IGeometrySource2D": return makeIGeometrySource2DFrom(abi: abi)
-            case "IDirect3DDevice": return makeIDirect3DDeviceFrom(abi: abi)
             case "IDirect3DSurface": return makeIDirect3DSurfaceFrom(abi: abi)
             case "IGraphicsEffect": return makeIGraphicsEffectFrom(abi: abi)
             case "IGraphicsEffectSource": return makeIGraphicsEffectSourceFrom(abi: abi)
             case "IBitmapFrame": return makeIBitmapFrameFrom(abi: abi)
             case "IBitmapFrameWithSoftwareBitmap": return makeIBitmapFrameWithSoftwareBitmapFrom(abi: abi)
             case "IBitmapPropertiesView": return makeIBitmapPropertiesViewFrom(abi: abi)
-            case "IMediaFrame": return makeIMediaFrameFrom(abi: abi)
-            case "IAudioInputNode": return makeIAudioInputNodeFrom(abi: abi)
-            case "IAudioInputNode2": return makeIAudioInputNode2From(abi: abi)
-            case "IAudioNode": return makeIAudioNodeFrom(abi: abi)
-            case "IAudioNodeWithListener": return makeIAudioNodeWithListenerFrom(abi: abi)
             case "IMediaCue": return makeIMediaCueFrom(abi: abi)
             case "IMediaSource": return makeIMediaSourceFrom(abi: abi)
             case "IMediaStreamDescriptor": return makeIMediaStreamDescriptorFrom(abi: abi)
-            case "IMediaStreamDescriptor2": return makeIMediaStreamDescriptor2From(abi: abi)
             case "IMediaTrack": return makeIMediaTrackFrom(abi: abi)
             case "ISingleSelectMediaTrackList": return makeISingleSelectMediaTrackListFrom(abi: abi)
             case "IMediaDeviceController": return makeIMediaDeviceControllerFrom(abi: abi)
-            case "IAudioEffectDefinition": return makeIAudioEffectDefinitionFrom(abi: abi)
             case "IMediaEncodingProperties": return makeIMediaEncodingPropertiesFrom(abi: abi)
             case "IMediaPlaybackSource": return makeIMediaPlaybackSourceFrom(abi: abi)
             case "IMediaProtectionServiceRequest": return makeIMediaProtectionServiceRequestFrom(abi: abi)
@@ -2937,7 +2438,6 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ICoreWindow": return makeICoreWindowFrom(abi: abi)
             case "ICoreWindowEventArgs": return makeICoreWindowEventArgsFrom(abi: abi)
             case "IPointerPointTransform": return makeIPointerPointTransformFrom(abi: abi)
-            case "IAdaptiveNotificationContent": return makeIAdaptiveNotificationContentFrom(abi: abi)
             case "IHttpContent": return makeIHttpContentFrom(abi: abi)
             case "IHttpFilter": return makeIHttpFilterFrom(abi: abi)
             case "AppDisplayInfo": return makeAppDisplayInfoFrom(abi: abi)
@@ -2992,20 +2492,6 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ShareTargetInfo": return makeShareTargetInfoFrom(abi: abi)
             case "ShareUIOptions": return makeShareUIOptionsFrom(abi: abi)
             case "TargetApplicationChosenEventArgs": return makeTargetApplicationChosenEventArgsFrom(abi: abi)
-            case "XmlAttribute": return makeXmlAttributeFrom(abi: abi)
-            case "XmlCDataSection": return makeXmlCDataSectionFrom(abi: abi)
-            case "XmlComment": return makeXmlCommentFrom(abi: abi)
-            case "XmlDocument": return makeXmlDocumentFrom(abi: abi)
-            case "XmlDocumentFragment": return makeXmlDocumentFragmentFrom(abi: abi)
-            case "XmlDocumentType": return makeXmlDocumentTypeFrom(abi: abi)
-            case "XmlDomImplementation": return makeXmlDomImplementationFrom(abi: abi)
-            case "XmlElement": return makeXmlElementFrom(abi: abi)
-            case "XmlEntityReference": return makeXmlEntityReferenceFrom(abi: abi)
-            case "XmlLoadSettings": return makeXmlLoadSettingsFrom(abi: abi)
-            case "XmlNamedNodeMap": return makeXmlNamedNodeMapFrom(abi: abi)
-            case "XmlNodeList": return makeXmlNodeListFrom(abi: abi)
-            case "XmlProcessingInstruction": return makeXmlProcessingInstructionFrom(abi: abi)
-            case "XmlText": return makeXmlTextFrom(abi: abi)
             case "DeviceInformation": return makeDeviceInformationFrom(abi: abi)
             case "DeviceInformationCollection": return makeDeviceInformationCollectionFrom(abi: abi)
             case "DeviceInformationCustomPairing": return makeDeviceInformationCustomPairingFrom(abi: abi)
@@ -3013,18 +2499,11 @@ public class __MakeFromAbi: MakeFromAbi {
             case "DeviceInformationUpdate": return makeDeviceInformationUpdateFrom(abi: abi)
             case "DevicePairingRequestedEventArgs": return makeDevicePairingRequestedEventArgsFrom(abi: abi)
             case "DevicePairingResult": return makeDevicePairingResultFrom(abi: abi)
-            case "DevicePickerAppearance": return makeDevicePickerAppearanceFrom(abi: abi)
             case "DeviceThumbnail": return makeDeviceThumbnailFrom(abi: abi)
             case "DeviceUnpairingResult": return makeDeviceUnpairingResultFrom(abi: abi)
             case "DeviceWatcher": return makeDeviceWatcherFrom(abi: abi)
             case "EnclosureLocation": return makeEnclosureLocationFrom(abi: abi)
-            case "KeyboardCapabilities": return makeKeyboardCapabilitiesFrom(abi: abi)
-            case "MouseCapabilities": return makeMouseCapabilitiesFrom(abi: abi)
-            case "MouseDevice": return makeMouseDeviceFrom(abi: abi)
-            case "MouseEventArgs": return makeMouseEventArgsFrom(abi: abi)
-            case "PenDevice": return makePenDeviceFrom(abi: abi)
             case "PointerDevice": return makePointerDeviceFrom(abi: abi)
-            case "TouchCapabilities": return makeTouchCapabilitiesFrom(abi: abi)
             case "Language": return makeLanguageFrom(abi: abi)
             case "BitmapBuffer": return makeBitmapBufferFrom(abi: abi)
             case "BitmapCodecInformation": return makeBitmapCodecInformationFrom(abi: abi)
@@ -3044,8 +2523,6 @@ public class __MakeFromAbi: MakeFromAbi {
             case "PackageManagerDebugSettings": return makePackageManagerDebugSettingsFrom(abi: abi)
             case "PackageUserInformation": return makePackageUserInformationFrom(abi: abi)
             case "PackageVolume": return makePackageVolumeFrom(abi: abi)
-            case "AudioBuffer": return makeAudioBufferFrom(abi: abi)
-            case "AudioFrame": return makeAudioFrameFrom(abi: abi)
             case "AutoRepeatModeChangeRequestedEventArgs": return makeAutoRepeatModeChangeRequestedEventArgsFrom(abi: abi)
             case "ImageDisplayProperties": return makeImageDisplayPropertiesFrom(abi: abi)
             case "MediaTimelineController": return makeMediaTimelineControllerFrom(abi: abi)
@@ -3060,42 +2537,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "SystemMediaTransportControlsPropertyChangedEventArgs": return makeSystemMediaTransportControlsPropertyChangedEventArgsFrom(abi: abi)
             case "SystemMediaTransportControlsTimelineProperties": return makeSystemMediaTransportControlsTimelinePropertiesFrom(abi: abi)
             case "VideoDisplayProperties": return makeVideoDisplayPropertiesFrom(abi: abi)
-            case "AudioDeviceInputNode": return makeAudioDeviceInputNodeFrom(abi: abi)
-            case "AudioDeviceOutputNode": return makeAudioDeviceOutputNodeFrom(abi: abi)
-            case "AudioFileInputNode": return makeAudioFileInputNodeFrom(abi: abi)
-            case "AudioFileOutputNode": return makeAudioFileOutputNodeFrom(abi: abi)
-            case "AudioFrameCompletedEventArgs": return makeAudioFrameCompletedEventArgsFrom(abi: abi)
-            case "AudioFrameInputNode": return makeAudioFrameInputNodeFrom(abi: abi)
-            case "AudioFrameOutputNode": return makeAudioFrameOutputNodeFrom(abi: abi)
-            case "AudioGraph": return makeAudioGraphFrom(abi: abi)
-            case "AudioGraphBatchUpdater": return makeAudioGraphBatchUpdaterFrom(abi: abi)
-            case "AudioGraphConnection": return makeAudioGraphConnectionFrom(abi: abi)
-            case "AudioGraphSettings": return makeAudioGraphSettingsFrom(abi: abi)
-            case "AudioGraphUnrecoverableErrorOccurredEventArgs": return makeAudioGraphUnrecoverableErrorOccurredEventArgsFrom(abi: abi)
-            case "AudioNodeEmitter": return makeAudioNodeEmitterFrom(abi: abi)
-            case "AudioNodeEmitterConeProperties": return makeAudioNodeEmitterConePropertiesFrom(abi: abi)
-            case "AudioNodeEmitterDecayModel": return makeAudioNodeEmitterDecayModelFrom(abi: abi)
-            case "AudioNodeEmitterNaturalDecayModelProperties": return makeAudioNodeEmitterNaturalDecayModelPropertiesFrom(abi: abi)
-            case "AudioNodeEmitterShape": return makeAudioNodeEmitterShapeFrom(abi: abi)
-            case "AudioNodeListener": return makeAudioNodeListenerFrom(abi: abi)
             case "AudioStateMonitor": return makeAudioStateMonitorFrom(abi: abi)
-            case "AudioSubmixNode": return makeAudioSubmixNodeFrom(abi: abi)
-            case "CreateAudioDeviceInputNodeResult": return makeCreateAudioDeviceInputNodeResultFrom(abi: abi)
-            case "CreateAudioDeviceOutputNodeResult": return makeCreateAudioDeviceOutputNodeResultFrom(abi: abi)
-            case "CreateAudioFileInputNodeResult": return makeCreateAudioFileInputNodeResultFrom(abi: abi)
-            case "CreateAudioFileOutputNodeResult": return makeCreateAudioFileOutputNodeResultFrom(abi: abi)
-            case "CreateAudioGraphResult": return makeCreateAudioGraphResultFrom(abi: abi)
-            case "CreateMediaSourceAudioInputNodeResult": return makeCreateMediaSourceAudioInputNodeResultFrom(abi: abi)
-            case "EchoEffectDefinition": return makeEchoEffectDefinitionFrom(abi: abi)
-            case "EqualizerBand": return makeEqualizerBandFrom(abi: abi)
-            case "EqualizerEffectDefinition": return makeEqualizerEffectDefinitionFrom(abi: abi)
-            case "FrameInputNodeQuantumStartedEventArgs": return makeFrameInputNodeQuantumStartedEventArgsFrom(abi: abi)
-            case "LimiterEffectDefinition": return makeLimiterEffectDefinitionFrom(abi: abi)
-            case "MediaSourceAudioInputNode": return makeMediaSourceAudioInputNodeFrom(abi: abi)
-            case "ReverbEffectDefinition": return makeReverbEffectDefinitionFrom(abi: abi)
-            case "SetDefaultSpatialAudioFormatResult": return makeSetDefaultSpatialAudioFormatResultFrom(abi: abi)
-            case "SpatialAudioDeviceConfiguration": return makeSpatialAudioDeviceConfigurationFrom(abi: abi)
-            case "SpatialAudioFormatConfiguration": return makeSpatialAudioFormatConfigurationFrom(abi: abi)
             case "MediaCaptureVideoProfileMediaDescription": return makeMediaCaptureVideoProfileMediaDescriptionFrom(abi: abi)
             case "DepthMediaFrameFormat": return makeDepthMediaFrameFormatFrom(abi: abi)
             case "MediaFrameFormat": return makeMediaFrameFormatFrom(abi: abi)
@@ -3105,14 +2547,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "MediaFrameSourceGroup": return makeMediaFrameSourceGroupFrom(abi: abi)
             case "MediaFrameSourceInfo": return makeMediaFrameSourceInfoFrom(abi: abi)
             case "VideoMediaFrameFormat": return makeVideoMediaFrameFormatFrom(abi: abi)
-            case "CastingConnection": return makeCastingConnectionFrom(abi: abi)
-            case "CastingConnectionErrorOccurredEventArgs": return makeCastingConnectionErrorOccurredEventArgsFrom(abi: abi)
-            case "CastingDevice": return makeCastingDeviceFrom(abi: abi)
-            case "CastingDevicePicker": return makeCastingDevicePickerFrom(abi: abi)
-            case "CastingDevicePickerFilter": return makeCastingDevicePickerFilterFrom(abi: abi)
-            case "CastingDeviceSelectedEventArgs": return makeCastingDeviceSelectedEventArgsFrom(abi: abi)
             case "CastingSource": return makeCastingSourceFrom(abi: abi)
-            case "AudioStreamDescriptor": return makeAudioStreamDescriptorFrom(abi: abi)
             case "AudioTrack": return makeAudioTrackFrom(abi: abi)
             case "AudioTrackOpenFailedEventArgs": return makeAudioTrackOpenFailedEventArgsFrom(abi: abi)
             case "AudioTrackSupportInfo": return makeAudioTrackSupportInfoFrom(abi: abi)
@@ -3142,13 +2577,11 @@ public class __MakeFromAbi: MakeFromAbi {
             case "MseSourceBuffer": return makeMseSourceBufferFrom(abi: abi)
             case "MseSourceBufferList": return makeMseSourceBufferListFrom(abi: abi)
             case "MseStreamSource": return makeMseStreamSourceFrom(abi: abi)
-            case "TimedMetadataStreamDescriptor": return makeTimedMetadataStreamDescriptorFrom(abi: abi)
             case "TimedMetadataTrack": return makeTimedMetadataTrackFrom(abi: abi)
             case "TimedMetadataTrackError": return makeTimedMetadataTrackErrorFrom(abi: abi)
             case "TimedMetadataTrackFailedEventArgs": return makeTimedMetadataTrackFailedEventArgsFrom(abi: abi)
             case "TimedTextSource": return makeTimedTextSourceFrom(abi: abi)
             case "TimedTextSourceResolveResultEventArgs": return makeTimedTextSourceResolveResultEventArgsFrom(abi: abi)
-            case "VideoStreamDescriptor": return makeVideoStreamDescriptorFrom(abi: abi)
             case "VideoTrack": return makeVideoTrackFrom(abi: abi)
             case "VideoTrackOpenFailedEventArgs": return makeVideoTrackOpenFailedEventArgsFrom(abi: abi)
             case "VideoTrackSupportInfo": return makeVideoTrackSupportInfoFrom(abi: abi)
@@ -3195,11 +2628,8 @@ public class __MakeFromAbi: MakeFromAbi {
             case "FrameIsoSpeedControl": return makeFrameIsoSpeedControlFrom(abi: abi)
             case "VariablePhotoSequenceController": return makeVariablePhotoSequenceControllerFrom(abi: abi)
             case "AudioEncodingProperties": return makeAudioEncodingPropertiesFrom(abi: abi)
-            case "ContainerEncodingProperties": return makeContainerEncodingPropertiesFrom(abi: abi)
-            case "MediaEncodingProfile": return makeMediaEncodingProfileFrom(abi: abi)
             case "MediaPropertySet": return makeMediaPropertySetFrom(abi: abi)
             case "MediaRatio": return makeMediaRatioFrom(abi: abi)
-            case "TimedMetadataEncodingProperties": return makeTimedMetadataEncodingPropertiesFrom(abi: abi)
             case "VideoEncodingProperties": return makeVideoEncodingPropertiesFrom(abi: abi)
             case "CurrentMediaPlaybackItemChangedEventArgs": return makeCurrentMediaPlaybackItemChangedEventArgsFrom(abi: abi)
             case "MediaBreak": return makeMediaBreakFrom(abi: abi)
@@ -3340,11 +2770,6 @@ public class __MakeFromAbi: MakeFromAbi {
             case "UserAuthenticationStatusChangingEventArgs": return makeUserAuthenticationStatusChangingEventArgsFrom(abi: abi)
             case "UserChangedEventArgs": return makeUserChangedEventArgsFrom(abi: abi)
             case "UserWatcher": return makeUserWatcherFrom(abi: abi)
-            case "SystemCpuUsage": return makeSystemCpuUsageFrom(abi: abi)
-            case "SystemCpuUsageReport": return makeSystemCpuUsageReportFrom(abi: abi)
-            case "SystemDiagnosticInfo": return makeSystemDiagnosticInfoFrom(abi: abi)
-            case "SystemMemoryUsage": return makeSystemMemoryUsageFrom(abi: abi)
-            case "SystemMemoryUsageReport": return makeSystemMemoryUsageReportFrom(abi: abi)
             case "UIContext": return makeUIContextFrom(abi: abi)
             case "AmbientLight": return makeAmbientLightFrom(abi: abi)
             case "AnimationController": return makeAnimationControllerFrom(abi: abi)
@@ -3459,36 +2884,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "WindowSizeChangedEventArgs": return makeWindowSizeChangedEventArgsFrom(abi: abi)
             case "PointerPoint": return makePointerPointFrom(abi: abi)
             case "PointerPointProperties": return makePointerPointPropertiesFrom(abi: abi)
-            case "AdaptiveNotificationText": return makeAdaptiveNotificationTextFrom(abi: abi)
-            case "BadgeNotification": return makeBadgeNotificationFrom(abi: abi)
-            case "BadgeUpdateManagerForUser": return makeBadgeUpdateManagerForUserFrom(abi: abi)
-            case "BadgeUpdater": return makeBadgeUpdaterFrom(abi: abi)
-            case "Notification": return makeNotificationFrom(abi: abi)
-            case "NotificationBinding": return makeNotificationBindingFrom(abi: abi)
-            case "NotificationData": return makeNotificationDataFrom(abi: abi)
-            case "NotificationVisual": return makeNotificationVisualFrom(abi: abi)
-            case "ScheduledTileNotification": return makeScheduledTileNotificationFrom(abi: abi)
-            case "ScheduledToastNotification": return makeScheduledToastNotificationFrom(abi: abi)
-            case "ScheduledToastNotificationShowingEventArgs": return makeScheduledToastNotificationShowingEventArgsFrom(abi: abi)
             case "ShownTileNotification": return makeShownTileNotificationFrom(abi: abi)
-            case "TileFlyoutNotification": return makeTileFlyoutNotificationFrom(abi: abi)
-            case "TileFlyoutUpdater": return makeTileFlyoutUpdaterFrom(abi: abi)
-            case "TileNotification": return makeTileNotificationFrom(abi: abi)
-            case "TileUpdateManagerForUser": return makeTileUpdateManagerForUserFrom(abi: abi)
-            case "TileUpdater": return makeTileUpdaterFrom(abi: abi)
-            case "ToastActivatedEventArgs": return makeToastActivatedEventArgsFrom(abi: abi)
-            case "ToastCollection": return makeToastCollectionFrom(abi: abi)
-            case "ToastCollectionManager": return makeToastCollectionManagerFrom(abi: abi)
-            case "ToastDismissedEventArgs": return makeToastDismissedEventArgsFrom(abi: abi)
-            case "ToastFailedEventArgs": return makeToastFailedEventArgsFrom(abi: abi)
-            case "ToastNotification": return makeToastNotificationFrom(abi: abi)
-            case "ToastNotificationActionTriggerDetail": return makeToastNotificationActionTriggerDetailFrom(abi: abi)
-            case "ToastNotificationHistory": return makeToastNotificationHistoryFrom(abi: abi)
-            case "ToastNotificationHistoryChangedTriggerDetail": return makeToastNotificationHistoryChangedTriggerDetailFrom(abi: abi)
-            case "ToastNotificationManagerForUser": return makeToastNotificationManagerForUserFrom(abi: abi)
-            case "ToastNotifier": return makeToastNotifierFrom(abi: abi)
-            case "UserNotification": return makeUserNotificationFrom(abi: abi)
-            case "UserNotificationChangedEventArgs": return makeUserNotificationChangedEventArgsFrom(abi: abi)
             case "FontWeights": return makeFontWeightsFrom(abi: abi)
             case "ActivationViewSwitcher": return makeActivationViewSwitcherFrom(abi: abi)
             case "UISettings": return makeUISettingsFrom(abi: abi)
