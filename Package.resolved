@@ -1,0 +1,24 @@
+{
+  "originHash" : "87b823bf428bf29843bad40e40c43d37980939762ee3b554613a42d08873af6f",
+  "pins" : [
+    {
+      "identity" : "swift-cwinrt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebrowsercompany/swift-cwinrt",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3e3d5a0270ebe8fb0bc738d24d4786a6cd0621eb"
+      }
+    },
+    {
+      "identity" : "swift-windowsfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebrowsercompany/swift-windowsfoundation",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dbe14563b6bb0eb9c761d8aff7f465afddf185f9"
+      }
+    }
+  ],
+  "version" : 3
+}

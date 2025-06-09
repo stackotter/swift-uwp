@@ -119,6 +119,11 @@ fileprivate func makeIFrameworkViewSourceFrom(abi: WindowsFoundation.IInspectabl
     return __IMPL_Windows_ApplicationModel_Core.IFrameworkViewSourceBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeICoreDropOperationTargetFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_DataTransfer_DragDrop_Core.ICoreDropOperationTarget = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_DataTransfer_DragDrop_Core.ICoreDropOperationTargetBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIDevicePairingSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Devices_Enumeration.IDevicePairingSettings = try! abi.QueryInterface()
     return __IMPL_Windows_Devices_Enumeration.IDevicePairingSettingsBridge.from(abi: RawPointer(swiftAbi))!
@@ -600,6 +605,26 @@ fileprivate func makeShareUIOptionsFrom(abi: WindowsFoundation.IInspectable) -> 
 
 fileprivate func makeTargetApplicationChosenEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TargetApplicationChosenEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCoreDragDropManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDragDropManager(fromAbi: abi)
+}
+
+fileprivate func makeCoreDragInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDragInfo(fromAbi: abi)
+}
+
+fileprivate func makeCoreDragOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDragOperation(fromAbi: abi)
+}
+
+fileprivate func makeCoreDragUIOverrideFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDragUIOverride(fromAbi: abi)
+}
+
+fileprivate func makeCoreDropOperationTargetRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDropOperationTargetRequestedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeDeviceInformationFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2385,6 +2410,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ICoreApplicationUnhandledError": return makeICoreApplicationUnhandledErrorFrom(abi: abi)
             case "IFrameworkView": return makeIFrameworkViewFrom(abi: abi)
             case "IFrameworkViewSource": return makeIFrameworkViewSourceFrom(abi: abi)
+            case "ICoreDropOperationTarget": return makeICoreDropOperationTargetFrom(abi: abi)
             case "IDevicePairingSettings": return makeIDevicePairingSettingsFrom(abi: abi)
             case "IGeometrySource2D": return makeIGeometrySource2DFrom(abi: abi)
             case "IDirect3DSurface": return makeIDirect3DSurfaceFrom(abi: abi)
@@ -2492,6 +2518,11 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ShareTargetInfo": return makeShareTargetInfoFrom(abi: abi)
             case "ShareUIOptions": return makeShareUIOptionsFrom(abi: abi)
             case "TargetApplicationChosenEventArgs": return makeTargetApplicationChosenEventArgsFrom(abi: abi)
+            case "CoreDragDropManager": return makeCoreDragDropManagerFrom(abi: abi)
+            case "CoreDragInfo": return makeCoreDragInfoFrom(abi: abi)
+            case "CoreDragOperation": return makeCoreDragOperationFrom(abi: abi)
+            case "CoreDragUIOverride": return makeCoreDragUIOverrideFrom(abi: abi)
+            case "CoreDropOperationTargetRequestedEventArgs": return makeCoreDropOperationTargetRequestedEventArgsFrom(abi: abi)
             case "DeviceInformation": return makeDeviceInformationFrom(abi: abi)
             case "DeviceInformationCollection": return makeDeviceInformationCollectionFrom(abi: abi)
             case "DeviceInformationCustomPairing": return makeDeviceInformationCustomPairingFrom(abi: abi)
