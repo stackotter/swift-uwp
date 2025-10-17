@@ -13,7 +13,7 @@ let package = Package(
             branch: "eb46cdb66f770a1e006f9fcfebbf9e99a0fba811"
         ),
         .package(
-            url: "https://github.com/thebrowsercompany/swift-windowsfoundation",
+            url: "https://github.com/stackotter/swift-windowsfoundation",
             branch: "4ad57d20553514bcb23724bdae9121569b19f172"
         ),
     ],
