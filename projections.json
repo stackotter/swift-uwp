@@ -15,6 +15,7 @@
     "Windows.ApplicationModel.Activation.ProtocolActivatedEventArgs",
     "Windows.Foundation.IMemoryBufferReference",
     "Windows.Foundation.IPropertyValue",
+    "Windows.Globalization.DayOfWeek",
     "Windows.Graphics",
     "Windows.Graphics.Effects",
     "Windows.Graphics.Imaging",
